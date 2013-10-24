@@ -403,12 +403,15 @@ final class WiredAccessoryManager implements WiredAccessoryCallbacks {
             try {
                 String devPath = event.get("DEVPATH");
                 String name = event.get("SWITCH_NAME");
+<<<<<<< HEAD
                 if (name.equals("CAR") || name.equals("DESK")) {
                     // Motorola dock - ignore this event and don't change
                     // the audio routing just because we're docked.
                     // Let only the dock emu audio jack sensing do that.
                     return;
                 }
+=======
+>>>>>>> 89b7101bae84119fa9e812f2537a2512afd7d636
                 synchronized (mLock) {
                     updateStateLocked(devPath, name, state);
                 }

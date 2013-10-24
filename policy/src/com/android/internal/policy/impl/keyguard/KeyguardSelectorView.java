@@ -27,7 +27,11 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.Intent;
+<<<<<<< HEAD
 import android.content.IntentFilter;
+=======
+import android.content.pm.ActivityInfo;
+>>>>>>> 89b7101bae84119fa9e812f2537a2512afd7d636
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
@@ -36,9 +40,18 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.InsetDrawable;
+<<<<<<< HEAD
 import android.os.BatteryManager;
 import android.os.Handler;
 import android.os.Message;
+=======
+import android.graphics.drawable.LayerDrawable;
+import android.graphics.drawable.StateListDrawable;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.InsetDrawable;
+import android.os.BatteryManager;
+>>>>>>> 89b7101bae84119fa9e812f2537a2512afd7d636
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -83,6 +96,7 @@ public class KeyguardSelectorView extends LinearLayout implements KeyguardSecuri
     private String[] mStoredTargets;
     private int mTargetOffset;
     private boolean mIsScreenLarge;
+<<<<<<< HEAD
     private UnlockReceiver mUnlockReceiver;
     private int mGlowTorch;
     private boolean mUserRotation;
@@ -101,6 +115,10 @@ public class KeyguardSelectorView extends LinearLayout implements KeyguardSecuri
         }
     }
     private H mHandler = new H();
+=======
+    private int mCreationOrientation;
+    private float mBatteryLevel;
+>>>>>>> 89b7101bae84119fa9e812f2537a2512afd7d636
 
     OnTriggerListener mOnTriggerListener = new OnTriggerListener() {
 
@@ -647,6 +665,7 @@ public class KeyguardSelectorView extends LinearLayout implements KeyguardSecuri
             mGlowPadView.setArc(0, 0);
         }
     }
+<<<<<<< HEAD
     public class UnlockReceiver extends BroadcastReceiver {
         public static final String ACTION_UNLOCK_RECEIVER = "com.android.lockscreen.ACTION_UNLOCK_RECEIVER";
         @Override
@@ -665,4 +684,6 @@ public class KeyguardSelectorView extends LinearLayout implements KeyguardSecuri
             }
         }
     }
+=======
+>>>>>>> 89b7101bae84119fa9e812f2537a2512afd7d636
 }

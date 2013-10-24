@@ -30,6 +30,8 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
@@ -348,6 +350,7 @@ public class GlowPadView extends View {
                                  mHandleDrawable.getPositionY() - mHandleDrawable.getHeight()/2,
                                  mHandleDrawable.getPositionX() + mHandleDrawable.getWidth()/2,
                                  mHandleDrawable.getPositionY() + mHandleDrawable.getHeight()/2);
+<<<<<<< HEAD
 
         mPaintText = new Paint();
         mPaintText.setAntiAlias(true);
@@ -358,6 +361,8 @@ public class GlowPadView extends View {
         mPaintText.setTextSize(res.getDimensionPixelSize(R.dimen.glowpad_notification_font_size));
         mTextRadius = res.getDimensionPixelSize(R.dimen.glowpad_notification_text_radius);
         mMaxTextArcLength = mTextRadius * MAX_TEXT_ARC_RADIANS;
+=======
+>>>>>>> 89b7101bae84119fa9e812f2537a2512afd7d636
     }
 
     private int getResourceId(TypedArray a, int id) {
@@ -1331,6 +1336,7 @@ public class GlowPadView extends View {
 
             canvas.drawArc(mArcRect, -90, mArcAngle, false, mArcPaint);
         }
+<<<<<<< HEAD
 
         if (!TextUtils.isEmpty(mHandleText) && mPaintText.getAlpha() != 0) {
             float x = mHandleDrawable.getPositionX();
@@ -1364,6 +1370,8 @@ public class GlowPadView extends View {
 
     public void setDrawOuterRing(boolean drawOuterRing) {
         mDrawOuterRing = drawOuterRing;
+=======
+>>>>>>> 89b7101bae84119fa9e812f2537a2512afd7d636
     }
 
     public void setOnTriggerListener(OnTriggerListener listener) {
